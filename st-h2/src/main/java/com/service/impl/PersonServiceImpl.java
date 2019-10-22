@@ -47,4 +47,9 @@ public class PersonServiceImpl implements PersonService {
     public List<Person> findPersonByNameAndAge(String name, int age) {
         return personRepository.findPersonByNameAndAge(name, age);
     }
+
+    @Override
+    public List<Person> findPersonByAge(int age) {
+        return personRepository.findPersonByAge(age);
+    }
 }

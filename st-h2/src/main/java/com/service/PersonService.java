@@ -17,4 +17,6 @@ public interface PersonService {
     void delete(Person person);
 
     List<Person> findPersonByNameAndAge(String name, int age);
+
+    List<Person> findPersonByAge(int age);
 }

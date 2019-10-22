@@ -53,4 +53,10 @@ public class PersonController {
         log.info("findPersonByNameAndAge api input parameters: name={}, age={}", name, age);
         return personService.findPersonByNameAndAge(name, age);
     }
+
+    @GetMapping("findPersonByAge")
+    public List<Person> findPersonByAge(@RequestParam("age") Integer age) {
+        log.info("findPersonByNameAndAge api input parameters: age={}", age);
+        return personService.findPersonByAge(age);
+    }
 }
