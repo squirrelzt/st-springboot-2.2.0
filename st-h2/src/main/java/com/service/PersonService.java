@@ -15,4 +15,6 @@ public interface PersonService {
     void update(Person person);
 
     void delete(Person person);
+
+    List<Person> findPersonByNameAndAge(String name, int age);
 }

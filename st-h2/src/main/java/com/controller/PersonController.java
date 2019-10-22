@@ -48,4 +48,9 @@ public class PersonController {
         personService.delete(person);
     }
 
+    @GetMapping("findPersonByNameAndAge")
+    public List<Person> findPersonByNameAndAge(@RequestParam("name") String name, @RequestParam("age") Integer age) {
+        log.info("findPersonByNameAndAge api input parameters: name={}, age={}", name, age);
+        return personService.findPersonByNameAndAge(name, age);
+    }
 }

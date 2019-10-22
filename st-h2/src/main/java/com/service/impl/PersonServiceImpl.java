@@ -42,4 +42,9 @@ public class PersonServiceImpl implements PersonService {
     public void delete(Person person) {
         personRepository.delete(person);
     }
+
+    @Override
+    public List<Person> findPersonByNameAndAge(String name, int age) {
+        return personRepository.findPersonByNameAndAge(name, age);
+    }
 }
