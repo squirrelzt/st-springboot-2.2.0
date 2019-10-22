@@ -17,6 +17,7 @@ spring:
     database: h2
     hibernate:
       ddl-auto: update
+    show-sql: true
 
 #H2控制台:http://localhost:8081/h2-console
   h2:
