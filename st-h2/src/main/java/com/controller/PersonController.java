@@ -59,4 +59,9 @@ public class PersonController {
         log.info("findPersonByNameAndAge api input parameters: age={}", age);
         return personService.findPersonByAge(age);
     }
+
+    @PostMapping("selectByPerson")
+    public List<Person> selectByPerson(@RequestBody Person person) {
+        return personService.selectByPerson(person);
+    }
 }

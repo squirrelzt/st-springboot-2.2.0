@@ -19,4 +19,6 @@ public interface PersonService {
     List<Person> findPersonByNameAndAge(String name, int age);
 
     List<Person> findPersonByAge(int age);
+
+    List<Person> selectByPerson(Person person);
 }

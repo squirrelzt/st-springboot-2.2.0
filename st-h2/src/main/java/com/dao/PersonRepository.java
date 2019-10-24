@@ -16,4 +16,7 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
 
     @Query(value = "select id, age, gender, name, create_time, create_date from person where age = :age", nativeQuery = true)
     List<Person> findPersonByAge(@Param("age") int age);
+
+    @Query(value = "select id, age, gender, name, create_time, create_date from person where name = :#{#person.name} AND age = :#{#person.age}", nativeQuery = true)
+    List<Person> selectByPerson(@Param("person") Person person);
 }

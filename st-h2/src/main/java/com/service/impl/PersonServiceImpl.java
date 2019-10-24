@@ -52,4 +52,9 @@ public class PersonServiceImpl implements PersonService {
     public List<Person> findPersonByAge(int age) {
         return personRepository.findPersonByAge(age);
     }
+
+    @Override
+    public List<Person> selectByPerson(Person person) {
+        return personRepository.selectByPerson(person);
+    }
 }
