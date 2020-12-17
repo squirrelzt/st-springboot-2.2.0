@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springfox-swagger
+
+server:
+  port: 8080
+
+# http://localhost:8080/swagger-ui/index.html
+swagger:
+  enable: true
+  application-name: springfox-swagger
+  aplication-version: 1.0.0
+  application-description: springfox swagger 3.0整合Demo
+  try-host: http://localhost:8080/swagger
